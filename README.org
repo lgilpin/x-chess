@@ -1,0 +1,5 @@
+* Getting started
+Run the existing script with:
+#+BEGIN_SRC bash
+python3 game.py
+#+END_SRC

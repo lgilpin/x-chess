@@ -1,0 +1,97 @@
+* Starting out
+- README how to run the chess program
+
+** TODO Chess bots 
+
+* Started using python chess
+- [[https://buildmedia.readthedocs.org/media/pdf/python-chess/latest/python-chess.pdf][python chess]]
+- Supports Python 3.5.3+ and PyPy3.
+- IPython/Jupyter Notebook integration. [[https://python-chess.readthedocs.io/en/latest/svg.html][SVG rendering docs]]
+
+* TODO Lists of moves
+- [ ] Scholar's mate
+- [ ] Fool's mate 
+Also thinking how these can be stopped.  
+ 
+* Problems with existing chess programs 
+
+* Making own agent 
+1. [[https://jupyter.brynmawr.edu/services/public/dblank/CS371%20Cognitive%20Science/2016-Fall/Programming%20a%20Chess%20Player.ipynb][in ipython]]
+2. We will use the chess library in the following manner:
+
+* Game play
+1. Create a chess.Board instance
+2. The chess.Board instance automatically generates all possible moves for the current player
+3. Current player picks a move
+4. Go to step #2 and repeat until win, lose, or draw
+
+* Boards
+- The board.turn value is a boolean indicating whose turn it is. The
+  values are either True for white or False for black.
+
+* Legal moves
+#+BEGIN_SRC 
+list(board.legal_moves)
+#+END_SRC
+And can get the first move
+#+BEGIN_SRC 
+move = list(board.legal_moves)[0]
+#+END_SRC
+move.uci incideates from _ to _ 
+
+* Random player
+
+
+* Casual explanations from chess?
+
+* Imitation learning 
+
+* Questions
+- What is the appropriate primitive structure 
+- What can alpha go teach (or explain) to us. 
+
+* For python with Linux
+[[https://github.com/niklasf/python-chess/issues/261]]
+* What are GOOD moves in chess
+- https://chessfox.com/6-elements-of-a-good-move-in-chess/
+- 
+
+* TODO define an algebra for pieces 
+* Jerry's thesis, once you name something, you have power over it
+* Power rankings of individual pieces 
+* Reasonable monitor for each chess piece 
+- Maybe pawns shouldn't matter 
+
+* A few strategies to pinpoint
+- Forks: Knights are the best pieces for forks because they can take
+  out two opposing pieces in one move. However, every piece on the
+  board has a forking ability.
+- Pins: You can also pin your opponent's pieces in, using your queen,
+  rooks, and bishops to pull of this powerful move.
+- Skewers: The opposite of a pin, a skewer is when you force a
+  valuable piece to move, and at the same time your rival leaves a
+  lesser piece vulnerable to attack.
+
+* Few few moves are very important
+- (up to 20th move)
+- Two poular sequences
+  - Ruy Lopez
+  - Sicilian Defense (open move to open a lot of possibilities)
+
+* Interactive game
+- Display window for scheme utils
+- Py game [[https://www.pygame.org/news]]
+
+* Writing samples
+The introductory moves are the MOST important 
+
+* TODO Add verbose 
+* TODO Add show ascii, but with actual parts 
+* What do we need?
+- Knowledge base of chess moves 
+- Chess commentary 
+
+* Vision 
+* Steps 
+* News
+* Contributions 
